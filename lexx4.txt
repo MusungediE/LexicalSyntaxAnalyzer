@@ -1,0 +1,10 @@
+GO
+SW (GGGGGGG < IIIIII { 
+    GGGGGGG = IIIIII - / 1 ; 
+}
+W (   == GGGGGGG ) 
+    IIIIII = 10 
+}
+BJ 
+     = 3 ;
+}

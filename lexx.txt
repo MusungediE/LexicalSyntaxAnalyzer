@@ -1,0 +1,15 @@
+GO
+sonygo byte1 ;
+samsung byte2 ;
+sonygo = 10 ;
+samsung = 3 ;
+LP (sonygo > samsung) {
+    sonygo = sonygo * 8 ;
+}
+SW ( sonygo != samsung ) {
+    sonygo = samsung + 9 ;
+}
+BJ {
+    sonygo = 5 ;
+}
+

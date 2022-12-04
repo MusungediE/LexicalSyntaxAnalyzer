@@ -1,0 +1,16 @@
+GO
+LGLGLG byte; 
+OPOPOP byte ;
+LGLGLG = 95; 
+OPOPOP = 34 ;
+LP (LGLGLG  OPOPOP)  
+    LGLGLG LGLGLG * 761 ;
+}
+SW ( LGLGLG == OPOPOP ) {
+    LGLGLG = 85 ;
+}
+BJ {
+    vartwooooo = 32  
+}
+
+syntax errors

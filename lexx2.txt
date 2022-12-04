@@ -1,0 +1,11 @@
+GO 
+motorola byte8 ;
+mototo byte2 ;
+motorola = 2 ;
+mototo = 4 ;
+SW ( mototo < motorola ) {
+    moto = 2 ;
+}
+BJ {
+    motorola = 16 ;
+}
