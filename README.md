@@ -34,7 +34,7 @@ int_lit: [0-9]+
 identifier: ([a-zA-Z]|_){6,8}
  
 PAIRWISE DISJOINT TESt:
-syntax rules: s--> 'START' --> ||| <var/> --> '{' ';' '}' --> 'GO' ['BJ'] --> 'LP' <var/> --> 'id' (|) --> 'byte1'|'byte2'|'byte4'|'byte8' --> '=' --> {('*'|'/'|'%') } --> {('+'|'-') } --> 'id'|'int_lit'|'(' ')'
+syntax rules: s--> 'START' --> ||| <var_> --> '{' ';' '}' --> 'GO' ['BJ'] --> 'LP' <var_> --> 'id' (|) --> 'byte1'|'byte2'|'byte4'|'byte8' --> '=' --> {('*'|'/'|'%') } --> {('+'|'-') } --> 'id'|'int_lit'|'(' ')'
 --> {'AND' } --> {'OR' } --> {('!='|'==') } --> {('<='|'>='|'<'|'<') } --> {('*'|'/'|'%') } --> {('+'|'-') } --> 'id'|'int_lit'|'bool_lit'
 every rule set in this language conforms to the standard of an LL Grammar and there's no lefthand recursion.
 
