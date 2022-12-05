@@ -3,7 +3,7 @@ sonygo byte1 ;
 samsung byte2 ;
 sonygo = 10 ;
 samsung = 3 ;
-LP (sonygo > samsung) {
+LP (sonygo == samsung) {
     sonygo = sonygo * 8 ;
 }
 SW ( sonygo != samsung ) {
@@ -12,4 +12,3 @@ SW ( sonygo != samsung ) {
 BJ {
     sonygo = 5 ;
 }
-
