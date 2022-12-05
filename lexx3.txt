@@ -1,16 +1,15 @@
 GO
-LGLGLG byte; 
+LGLGLG byte ; 
 OPOPOP byte ;
 LGLGLG = 95; 
 OPOPOP = 34 ;
-LP (LGLGLG  OPOPOP)  
+LLP (LGLGLG < OPOPOP)  {
     LGLGLG LGLGLG * 761 ;
 }
-SW ( LGLGLG == OPOPOP ) {
+SSW ( LGLGLG == OPOPOP ) {
     LGLGLG = 85 ;
 }
-BJ {
-    vartwooooo = 32  
+BJJ {
+    LGLGLGG = 32  
 }
-
-syntax errors
+STOP
