@@ -30,9 +30,10 @@ keyword, store byte8: byte8
 keyword, true: true 
 keyword, and: & 
 keyword, or: |  
+int_lit: [0-9]+ 
+identifier: ([a-zA-Z]|_){6,8}
  
-int_lit: [0-9]+ identifier: ([a-zA-Z]|_){6,8}
- 
+PAIRWISE DISJOINT TESt:
 syntax rules: s--> 'START' --> |||<var_op> --> '{' ';' '}' --> 'GO' ['BJ'] --> 'LP' <var> --> 'id' (|) --> 'byte1'|'byte2'|'byte4'|'byte8' --> '=' --> {('*'|'/'|'%') } --> {('+'|'-') } --> 'id'|'int_lit'|'(' ')'
 --> {'AND' } --> {'OR' } --> {('!='|'==') } --> {('<='|'>='|'<'|'<') } --> {('*'|'/'|'%') } --> {('+'|'-') } --> 'id'|'int_lit'|'bool_lit'
 every rule set in this language conforms to the standard of an LL Grammar and there's no lefthand recursion.
