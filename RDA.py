@@ -21,8 +21,10 @@ s-> GO <stmt>
 <factor> -> id
 <factor> -> int_lit
 <factor> -> <expr> 
-<boolexpr> -> <bor> AND <bor>
+<boolexpr> -> AND <bor>
+<boolexpr> -> <bor> 
 <bor> -> <beq> OR <beq>
+<bor> -> OR <beq>
 <beq> -> <brel> != <brel>
 <beq> -> <brel> == <brel>
 <brel> -> <bexpr> <= <bexpr>
@@ -58,6 +60,7 @@ s--> 'GO' <stmt>
 <bexpr> --> <bterm> {('*'|'/'|'%') <bterm>}
 <bterm> --> <bfactor> {('+'|'-') <bfactor>}
 <bfactor> --> 'id'|'int_lit'|'bool_lit'
+
 '''
 
 import re
@@ -263,7 +266,7 @@ class RDA:
 
 #regex for variable declaration
 def isVariable(str):
-    return re.search("[a-z]|[A-Z]|_{6,8}", str)
+    return re.search("[a-z]|[A-Z]|_ {6,8}", str)
 
 #Lex class is lexical analyzer, checks if tokens are valid tokens
 class LEX:
@@ -342,7 +345,7 @@ class LEX:
         return lexemes
 
 
-f = open("/Users/musungedietongwe/Desktop/CODE/P3Test2/lexx.txt", 'r')
+f = open("/Users/musungedietongwe/Desktop/CODE/P3Test2/lexx4.txt", 'r')
 text = f.read()
 lexer = text.split()
 stringLex = LEX(lexer)
