@@ -1,10 +1,11 @@
 GO
-SW (GGGGGGG < IIIIII { 
-    GGGGGGG = IIIIII - / 1 ; 
+SW (GGGGGG < IIIIII { 
+    GGGGGG = IIIIII - / 1 ; 
 }
-W (   == GGGGGGG ) 
+W (   = / = GGGGGG ) 
     IIIIII = 10 
 }
 BJ 
      = 3 ;
 }
+STOP
